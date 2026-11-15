@@ -34,7 +34,6 @@ public final class Cosmetics {
             super(context);
         }
 
-        @Override
         public void render(MatrixStack matrices, VertexConsumerProvider vcp, int light,
                            PlayerEntityRenderState state, float limbAngle, float limbDistance) {
             MinecraftClient mc = MinecraftClient.getInstance();

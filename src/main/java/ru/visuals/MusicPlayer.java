@@ -214,8 +214,7 @@ public final class MusicPlayer {
                 int[] bxs = {bx + w / 2 - 24, bx + w / 2 - 8, bx + w / 2 + 8};
                 String[] btns = {"⏮", playing ? "⏸" : "▶", "⏭"};
                 for (int i = 0; i < 3; i++) {
-                    boolean hov = mc.mouse.getX() * sw / mc.getWindow().getWidth() >= bxs[i]
-                            && mc.mouse.getX() * sw / mc.getWindow().getWidth() <= bxs[i] + 14;
+                    boolean hov = false; // hover handled via handleClick
                     Gfx.roundRect(ctx, bxs[i], by + 25, bxs[i] + 14, by + 39, 4, Gfx.mul(hov ? acc : th.card(), 1f));
                     ctx.drawText(mc.textRenderer, btns[i], bxs[i] + 3, by + 29, th.text(), false);
                 }

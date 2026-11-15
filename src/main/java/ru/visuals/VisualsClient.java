@@ -433,6 +433,7 @@ public class VisualsClient implements ClientModInitializer {
         if (Features.EFFECTS.on()) renderEffects(ctx, mc, sw);
         if (Features.ARMOR.on()) renderArmor(ctx, mc, sw, sh);
         HudExtras.render(ctx, mc, sw, sh);
+        KkBadge.render(ctx, mc);
         MusicPlayer.render(ctx, mc, sw, sh);
         float dt2 = 1f / Math.max(1f, mc.getCurrentFps());
         DeathEffects.render(ctx, mc, sw, sh, dt2);
